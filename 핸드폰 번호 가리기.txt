@@ -1,0 +1,24 @@
+class Solution2 {
+}
+
+fun main(args: Array<String>) {
+    var phone_number = "01033334444"
+    solution(phone_number)
+}
+
+fun solution(phone_number: String): String {
+    var answer = ""
+    var front = ""
+    var back = ""
+
+    answer = phone_number.substring(0, phone_number.count() - 4)
+
+    for(i in 0..answer.count() - 1){
+        front += "*"
+    }
+    back = phone_number.substring(phone_number.count() - 4, phone_number.count())
+
+    answer = front + back
+    println(answer)
+    return answer
+}
