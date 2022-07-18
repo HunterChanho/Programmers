@@ -1,0 +1,8 @@
+GET http://localhost:8080/todo
+Content-Type: application/json
+
+{
+  "id": 4,
+  "completed": false,
+  "todoName": "운동하기"
+}
